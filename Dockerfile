@@ -19,6 +19,7 @@ RUN  \
     ruby \
     ruby-dev \
     shellcheck \
+    gpg-agent \
     --no-install-recommends && \
     sed -i 's,http://ftp.us.debian.org/debian/,http://httpredir.debian.org/debian,' /etc/apt/sources.list && \
     rm -rf /var/lib/apt/lists/*
